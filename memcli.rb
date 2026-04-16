@@ -5,21 +5,21 @@
 class Memcli < Formula
   desc "Read-only browser for .agent-memory/ project trees"
   homepage "https://github.com/TomyQB/dotai"
-  version "0.3.4"
+  version "0.3.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TomyQB/dotai/releases/download/v0.3.4/memcli_0.3.4_darwin_amd64.tar.gz"
-      sha256 "551a459cbd9ce2644efd171e06a6176678f960031431cb16d66e9950b9e08405"
+      url "https://github.com/TomyQB/dotai/releases/download/v0.3.5/memcli_0.3.5_darwin_amd64.tar.gz"
+      sha256 "526bbf91c94f791f920f3876d46bb769753f5da99a32cddbb96c6d26f2cdcaef"
 
       define_method(:install) do
         bin.install "memcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TomyQB/dotai/releases/download/v0.3.4/memcli_0.3.4_darwin_arm64.tar.gz"
-      sha256 "17b3766e1f5b2cd1abf8de40d548db6a5c458aec46f435e9c67e0d578413558e"
+      url "https://github.com/TomyQB/dotai/releases/download/v0.3.5/memcli_0.3.5_darwin_arm64.tar.gz"
+      sha256 "02b282a609465b5f1fb7f9655d0d3f40d0fa3cae709ce1fe5db6ac134e4cd1a7"
 
       define_method(:install) do
         bin.install "memcli"
@@ -29,15 +29,15 @@ class Memcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TomyQB/dotai/releases/download/v0.3.4/memcli_0.3.4_linux_amd64.tar.gz"
-      sha256 "1afd6a2c8875e89f4d9090710e2db1d6637f2be36db171d377fe754d8cd9c57e"
+      url "https://github.com/TomyQB/dotai/releases/download/v0.3.5/memcli_0.3.5_linux_amd64.tar.gz"
+      sha256 "fbd428de35cbef33372e29a5fc866f229a93a30ff1c7fdda79972baf4382ae19"
       define_method(:install) do
         bin.install "memcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TomyQB/dotai/releases/download/v0.3.4/memcli_0.3.4_linux_arm64.tar.gz"
-      sha256 "3bc27b1d9377b6ace8cb30ea5ad49037d0ebbff0be5a3091b1567ef2f14a8d39"
+      url "https://github.com/TomyQB/dotai/releases/download/v0.3.5/memcli_0.3.5_linux_arm64.tar.gz"
+      sha256 "ceea2579d9fb84ece2b0c7270ae9c50c4b23a7d8281c128f7abfa9fa66e6cd6e"
       define_method(:install) do
         bin.install "memcli"
       end
