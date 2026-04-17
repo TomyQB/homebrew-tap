@@ -5,21 +5,21 @@
 class Dotai < Formula
   desc "AI coding environment setup wizard, one shot"
   homepage "https://github.com/TomyQB/dotai"
-  version "0.3.7"
+  version "0.3.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TomyQB/dotai/releases/download/v0.3.7/dotai_0.3.7_darwin_amd64.tar.gz"
-      sha256 "51ee0c0741e1a777f0ab7de56cca82334825260dfcb5e652e4071204636c856d"
+      url "https://github.com/TomyQB/dotai/releases/download/v0.3.8/dotai_0.3.8_darwin_amd64.tar.gz"
+      sha256 "50e11bae2260cb10c841f0349531f35970e78846894710d807fe20ac461c2979"
 
       define_method(:install) do
         bin.install "dotai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TomyQB/dotai/releases/download/v0.3.7/dotai_0.3.7_darwin_arm64.tar.gz"
-      sha256 "af41826b977b442930dcd22ad0fdce06d194343ac9665c8dc5e48b0f4f44b02d"
+      url "https://github.com/TomyQB/dotai/releases/download/v0.3.8/dotai_0.3.8_darwin_arm64.tar.gz"
+      sha256 "419110538fd00ff1e65b658e2c258f0ea70e451aa7c53c5b014c0d0f3406a6bb"
 
       define_method(:install) do
         bin.install "dotai"
@@ -29,15 +29,15 @@ class Dotai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TomyQB/dotai/releases/download/v0.3.7/dotai_0.3.7_linux_amd64.tar.gz"
-      sha256 "62932c952c2c2dd72cf0f5938ca7677cf48223402b9b8243fdd62856dedf247c"
+      url "https://github.com/TomyQB/dotai/releases/download/v0.3.8/dotai_0.3.8_linux_amd64.tar.gz"
+      sha256 "c52de378d196f0f8f60140544a8ef68d84b17181aa2adb258c5199f18e61ec60"
       define_method(:install) do
         bin.install "dotai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TomyQB/dotai/releases/download/v0.3.7/dotai_0.3.7_linux_arm64.tar.gz"
-      sha256 "9a74bcb853de4db7efd50da03388bf959f858e7770ae7f3e60e5e24ed649af9d"
+      url "https://github.com/TomyQB/dotai/releases/download/v0.3.8/dotai_0.3.8_linux_arm64.tar.gz"
+      sha256 "a5862a889bf20d6918cdefa8865b18db93894e28d0178498d354a4a978422bc7"
       define_method(:install) do
         bin.install "dotai"
       end
