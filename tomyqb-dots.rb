@@ -1,8 +1,8 @@
 class TomyqbDots < Formula
   desc "Personal dotfiles installer for TomyQB development environment"
   homepage "https://github.com/TomyQB/tomyqb-dots"
-  url "https://github.com/TomyQB/tomyqb-dots/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "30c9745d9c7be882d329b27cb25f8e8ac785addf3de16bc8467ae5e568381c5f"
+  url "https://github.com/TomyQB/tomyqb-dots/archive/refs/tags/v0.2.10.tar.gz"
+  sha256 "0eeb73740a7fc04e0154e792614247bd9a27dc8afdcb8b459446e7071f51d28c"
   license "MIT"
   head "https://github.com/TomyQB/tomyqb-dots.git", branch: "main"
 
@@ -29,7 +29,7 @@ class TomyqbDots < Formula
           tomyqb-dots install
 
       The installer will:
-        • brew bundle the Brewfile (fish, starship, ghostty, aerospace, borders, ...)
+        • brew bundle the Brewfile (fish, starship, warp, aerospace, borders, ...)
         • Back up any existing configs to ~/.tomyqb-backup-<timestamp>/
         • Drop the dotfiles in place
         • Bootstrap fisher + tpm plugins
